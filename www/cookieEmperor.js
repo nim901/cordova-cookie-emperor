@@ -8,6 +8,17 @@ function CookieEmperor(pluginName) {
 }
 
 /**
+ * returns cookies for given url
+ * @param url
+ * @param cookieName
+ * @param successCallback
+ * @param errorCallback
+ */
+CookieEmperor.prototype.getCookies = function(url, successCallback, errorCallback) {
+    cordova.exec(successCallback, errorCallback, this.pluginName, 'getCookies', [url]);
+};
+
+/**
  * returns cookie value
  * @param url
  * @param cookieName
