@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-cookieemperor-v1",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cordova webkit browser cookie manipulation, XWalk solution",
   "cordova": {
     "id": "cordova-plugin-cookieemperor-v1",
