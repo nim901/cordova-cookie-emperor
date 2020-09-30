@@ -18,7 +18,6 @@ import android.webkit.CookieManager;
 
 public class CookieEmperor extends CordovaPlugin {
 
-    private final String TAG = "CookieEmperorPlugin";
     public static final String ACTION_GET_COOKIES = "getCookies";
     public static final String ACTION_GET_COOKIE_VALUE = "getCookieValue";
     public static final String ACTION_SET_COOKIE_VALUE = "setCookieValue";
@@ -96,7 +95,6 @@ public class CookieEmperor extends CordovaPlugin {
                                 }
                             }
                             catch (Exception e) {
-                                Log.e(TAG, "Exception: " + e.getMessage());
                                 callbackContext.error(e.getMessage());
                             }
                         }
